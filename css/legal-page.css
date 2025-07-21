@@ -1,8 +1,15 @@
 .legal-header {
+  position: fixed;
+  top: 60px; /* height of your site header */
+  right: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 1000;
   background-color: #e2e2e2;
   padding: 30px;
-  margin-top: 60px;
-  width: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: end;
 }
 
 .legal-header h1 {
@@ -12,6 +19,8 @@
 }
 
 main {
+  padding-top: 160px; /* .legal-header height (60px header + 60px .legal-header padding) */
+  padding-bottom: 80px; /* footer min-height + a little extra for spacing */
 }
 
 section {
@@ -26,10 +35,13 @@ section {
 }
 
 .section-label {
+  position: sticky;
+  top: 8vw;
   width: 100%;
   background-color: #2b2d3b;
   height: max-content;
   padding: 10px 16px;
+  z-index: 2;
 }
 
 .document-content {
@@ -53,12 +65,16 @@ section {
 }
 
 footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
   display: flex;
   align-items: center;
-  width: 100%;
   background-color: #e2e2e2;
   padding: 0 30px;
   min-height: 70px;
+  z-index: 10;
 }
 
 .footer-content {
