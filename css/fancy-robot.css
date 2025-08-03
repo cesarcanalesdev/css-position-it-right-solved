@@ -1,3 +1,5 @@
+@import "../css/animations.css";
+
 .robot-container {
   position: relative;
   padding: 0;
@@ -24,10 +26,21 @@
   top: 3.5rem;
   width: 90px;
   height: 140px;
-  background: black;
-  border-radius: 1rem;
-  border: solid white;
-  border-width: 60px 10px 10px 20px;
+  background: white;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.robot-pupil-left {
+  position: relative;
+  width: 50px;
+  height: 60px;
+  background-color: black;
+  border-radius: 10px;
+  animation-name: orbitLeft;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 
 .robot-eye-right {
@@ -36,10 +49,22 @@
   bottom: 7rem;
   width: 90px;
   height: 170px;
-  background: black;
+  background: white;
   border-radius: 1rem;
-  border: solid white;
-  border-width: 60px 10px 10px 20px;
+  padding: 10px;
+}
+
+.robot-pupil-right {
+  position: relative;
+  left: 10px;
+  width: 60px;
+  height: 80px;
+  background-color: black;
+  border-radius: 10px;
+  animation-name: orbitRight;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 
 .robot-ear-left {
@@ -54,6 +79,10 @@
   background-color: gold;
   border: goldenrod 5px solid;
   border-radius: 0.8rem 0 0 0.8rem;
+  animation-name: earLeft;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 
 .robot-earing-left {
@@ -73,6 +102,10 @@
   border: #00d9ff 3px solid;
   border-radius: 100%;
   opacity: 0.85;
+  animation-name: rotateInfi;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 
 .robot-ear-right {
@@ -87,6 +120,10 @@
   background-color: gold;
   border: goldenrod 5px solid;
   border-radius: 0 0.8rem 0.8rem 0;
+  animation-name: earRight;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 
 .robot-earing-right {
@@ -108,6 +145,10 @@
   border: #00d9ff 3px solid;
   border-radius: 100%;
   opacity: 0.85;
+  animation-name: rotateInfi;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 
 .robot-nose {
@@ -119,6 +160,7 @@
   background-image: url("/assets/images/close-up-glitter-decoration-detail.jpg");
   border: #505050 2px solid;
   border-radius: 0.4rem;
+  animation: noseAnim 2s infinite ease-in-out;
 }
 
 .robot-teeth {
@@ -132,6 +174,7 @@
   background-color: #707070;
   border: #505050 2px solid;
   border-radius: 0.4rem;
+  animation: mouthAnim 1.2s infinite ease-in-out;
 }
 
 .robot-tooth {
@@ -145,6 +188,8 @@
   background: linear-gradient(to right, gold, goldenrod, white, darkgoldenrod);
   border: goldenrod 1.2px solid;
   border-radius: 0.4rem;
+  animation: colorSwap 2s infinite;
+  animation-timing-function: ease-in-out;
 }
 
 .robot-hair-style {
@@ -167,6 +212,10 @@
   height: 3rem;
   background: linear-gradient(to bottom, gold, white, goldenrod);
   border-radius: 20rem;
+  animation-name: antennaBuzz;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 
 .robot-hair-two {
@@ -176,6 +225,9 @@
   height: 5rem;
   background: linear-gradient(to bottom, red, white, salmon, white, hotpink);
   border-radius: 50%;
+  animation-name: antennaCharge;
+  animation-duration: .2s;
+  animation-iteration-count: infinite;
 }
 
 .robot-hair-three {
@@ -185,4 +237,7 @@
   height: 4rem;
   background: linear-gradient(to bottom, white, goldenrod, darkgoldenrod);
   border-radius: 0.5rem;
+  animation-name: rotateInfi;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
 }

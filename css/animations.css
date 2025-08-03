@@ -1,0 +1,182 @@
+@keyframes mouthAnim {
+  0% {
+    transform: scaleY(1) translateY(0px);
+  }
+  20% {
+    transform: scaleY(1.2) translateY(2px);
+  }
+  40% {
+    transform: scaleY(0.8) translateY(-2px);
+  }
+  60% {
+    transform: scaleY(1.1) translateY(1px);
+  }
+  80% {
+    transform: scaleY(0.95) translateY(-1px);
+  }
+  100% {
+    transform: scaleY(1) translateY(0px);
+  }
+}
+
+@keyframes rotateInfi {
+  0% {
+    transform: rotate(0deg) scale(0.75);
+  }
+  50% {
+    transform: rotate(170deg) scale(1);
+  }
+  100% {
+    transform: rotate(360deg) scale(0.75);
+  }
+}
+
+@keyframes earLeft {
+  0% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(-15px);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateX(-30px);
+    opacity: 0;
+  }
+}
+
+@keyframes earRight {
+  0% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+  50% {
+    transform: translateX(15px);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateX(30px);
+    opacity: 0;
+  }
+}
+
+@keyframes orbitLeft {
+    0% {
+        transform: translate(-5px, -5px);
+    }
+    25% {
+        transform: translate(25px, -5px);
+    }
+    50% {
+        transform: translate(25px, 65px);
+    }
+    75% {
+        transform: translate(-5px, 65px);
+    }
+    100% {
+        transform: translate(-5px, -5px);
+    }
+}
+
+@keyframes orbitRight {
+    0% {
+        transform: translate(5px, -5px);
+    }
+    25% {
+        transform: translate(-15px, -5px);
+    }
+    50% {
+        transform: translate(-15px, 75px);
+    }
+    75% {
+        transform: translate(5px, 75px);
+    }
+    100% {
+        transform: translate(5px, -5px);
+    }
+}
+
+@keyframes antennaBuzz {
+    0% {
+        transform: translateY(-10px);
+        opacity: 1;
+    }
+    25% {
+        transform: translateY(10px);
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(0px);
+    }
+    60% {
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(10px); 
+        opacity: 1;
+    }
+}
+
+@keyframes antennaCharge {
+    0% {
+        transform: translateY(8px) rotate(-8deg);
+        opacity: .5;
+    }
+    25% {
+        transform: translateY(5px) rotate(8deg);
+        opacity: 1;
+    }
+    50% {
+        transform: translateY(-15px) rotate(0deg);
+        opacity: 0;
+    }
+    75% {
+        transform: translateY(-10px) rotate(-8deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(5px) rotate(8deg);
+        opacity: .5;
+    }
+}
+
+@keyframes colorSwap {
+  0% {
+    background: linear-gradient(to right, gold, goldenrod, white, darkgoldenrod);
+  }
+  25% {
+    background: linear-gradient(to right, goldenrod, gold, darkgoldenrod, white);
+  }
+  50% {
+    background: linear-gradient(to right, darkgoldenrod, white, gold, goldenrod);
+  }
+  75% {
+    background: linear-gradient(to right, goldenrod, darkgoldenrod, white, gold);
+  }
+  100% {
+    background: linear-gradient(to right, gold, goldenrod, white, darkgoldenrod);
+  }
+}
+
+@keyframes noseAnim {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  20% {
+    transform: translateY(-5px) rotate(-3deg);
+  }
+  40% {
+    transform: translateY(-10px) rotate(3deg);
+  }
+  60% {
+    transform: translateY(-5px) rotate(-3deg);
+  }
+  80% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+}
